@@ -8,7 +8,7 @@ git init
 git add README.md
 git commit -m "upload readme"
 git branch -M main
-git remote add origin https://github.com/maskedbaby-ch/summary.git
+git remote add origin git@github.com:maskedbaby-ch/summary.git
 git push -u origin main
 ```
 ## 3. 问题
@@ -50,4 +50,15 @@ fatal: Authentication failed for 'https://github.com/maskedbaby-ch/summary.git/'
 </font> 
 
 *********************************************************
+## 4. 使用免密码登陆
+首先ssh-keygen -t rsa -C "邮箱@163.com" 生成密钥
+cat生成的密钥并复制
+到github的setting，找到SSH keys，把密钥复制进去
+如果之前创建仓库使用的https可以使用
+
+    git remote set-url origin git@github.com:maskedbaby-ch/summary.git
+
+切换到ssh
+
+******************************************************
 
