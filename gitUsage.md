@@ -31,7 +31,7 @@ git config --global user.name "Your Name"
 
 **********************************************
 
-```c
+```shell
     git push -u origin main 登陆出错
 ```  
 
