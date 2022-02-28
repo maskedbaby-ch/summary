@@ -121,7 +121,7 @@ cat 生成的密钥并复制，密钥在 ~/.ssh/
 * 切换分支
 ```shell
     git checkout <branch> #切换分支前，使用 git stash 暂存，来防止影响分支
-    #git stash pop 使用 "git stash pop" 将可复原到最新的操作。指定 stash ID （如：stash@{1} ），则可以恢复特定的操作
+    #git stash pop 使用 "git stash pop" 将可复原到最新的操作。指定 stash ID （如：stash@{1}），则可以恢复特定的操作
 ```
 ![Alt text](https://backlog.com/git-tutorial/tw/img/post/stepup/capture_stepup1_3_3.png "Stash")
 
