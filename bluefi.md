@@ -1,5 +1,4 @@
 # <center>BlueFi 抓包分析</center>
-![image](./pic/2.png "s")
 
 #帧格式
 
@@ -22,7 +21,7 @@ Frame Control：
 ```
 
 #分析图片包状况
-
+![image](./pic/2.png "s")
 ```shell
 49 04 01 01 01
 
@@ -39,7 +38,7 @@ Frame Control：
 01 12 15 0e 18 00 d2 13 b7 25 63 37 74 9b 7e 5d dc 9a 07 ae
 
 - 01: 数据帧，高 6 位 000000 -> 发送协商数据
-- 12: 0001 0010 bit2 = 1，bit有校验和，bit4 = 1，有分包
+- 12: 0001 0010 bit2 = 1，bit 有校验和，bit4 = 1，有分包
 - 15: 事务号
 - 0e: 数据长度
 
