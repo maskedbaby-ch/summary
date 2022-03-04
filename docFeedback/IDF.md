@@ -10,7 +10,8 @@
 |27    |41      |   17    |
 
 ![image](./pic/1.png "s")
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表一
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表一
 
 &emsp;&emsp;从图中可以看出，vscode 有41个相关问题，占据了接近 50% 的问题总量，其次是 else，最后是eclipse。 从中可以看出 vscode 是中国客户比较倾向使用的 IDE，同时也是问题最多的 IDE。
 
@@ -23,6 +24,7 @@
 
 
 ![image](./pic/2.png "s")
+
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表二
 
 
