@@ -1,7 +1,10 @@
 # <center>关于 ESP-IDF 问题反馈</center>
 &emsp;&emsp;目前统计了中文论坛所有关于环境搭建的问题，共 85 个问题。
+
 &emsp;&emsp;在中文论坛里，目前合计约有 1590 个问题，由此可以得出环境搭建问题占比达到了 5.2% ，单这类问题就有 5% 的占比，可见环境搭建是阻碍继续使用 esp-idf 的拦路虎。集成开发环境本来是用来减少负担的，最后反而增加了开发者的负担，这是我们需要改进的。
-# 一、图表分析
+
+# 一、中文图表数据
+
 在中文论坛里，统计了使用三种搭建方式 (vscode, eclipse, else) 产生的问题数目和比例。else 包括了 linux 平台和 win 平台直接使用命令行搭建方式。
 
 
@@ -10,6 +13,7 @@
 |27    |41      |   17    |
 
 ![image](./pic/1.png "s")
+
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表一
 
 &emsp;&emsp;从图中可以看出，vscode 有41个相关问题，占据了接近 50% 的问题总量，其次是 else，最后是eclipse。 从中可以看出 vscode 是中国客户比较倾向使用的 IDE，同时也是问题最多的 IDE。
@@ -23,28 +27,77 @@
 
 
 ![image](./pic/2.png "s")
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表二
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表二
 
 
 &emsp;&emsp;安装类问题有 34 个，占据 40% 的比例，可以看出安装类问题占据了主要问题类型，无法正确的安装环境，直接导致了开发受到阻碍。
+
 &emsp;&emsp;下面图表进行了交叉统计，统计的是各平台在安装问题上所占比例
 
-![image](./pic/3.png "s")             
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表三
+![image](./pic/3.png "s")    
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表三
 
 &emsp;&emsp;从中可以看出 vscode 在安装问题上占据了 38.24% 的比例，vscode 在环境搭建上确实引起了最多的问题。直接在 win 或 linux 平台搭建环境也有相当高不成功的比例。
+
 &emsp;&emsp;下面图表统计的是各平台在编译问题上所占比例
-![image](./pic/4.png "s")         
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表四
+![image](./pic/4.png "s")    
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表四
 
 &emsp;&emsp;vscode 的编译问题占据了一半的比例，安装好后，却编译不成功，这也直接影响了开发者使用软件的热情。
-# 二、建议
-&emsp;&emsp;进行统计以后，又对该类问题的回复率进行了大概的观察。
+
+
+# 二、英文图表数据
+
+&emsp;&emsp;以下为英文论坛数据，英文论坛共有 7629 个问题， 环境问题合计约有 370，问题占比 4.8% 和中文论坛占比差不多
+
+| else | vscode | eclipse |
+|---   | ---    |   ---   |
+|193   |76      |   102    |
+
+![image](./pic/1_en.png "s") 
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表五
+
+&emsp;&emsp;三类平台，占主要比例的是依靠 win 和 linux 平台搭建环境的方式与中文论坛不同。
+
+| 安装  | 编译   | 使用     |
+|---   | ---    |   ---   |
+|90    |139     |   141    |
+
+![image](./pic/2_en.png "s") 
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表六
+
+三类问题，占主要比例的是编译问题，对于 example 的编译存在较大难度
+
+![image](./pic/3_en.png "s") 
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表七
+
+&emsp;&emsp;由此可以看出在非 vscode 和 eclipse 上安装问题占据了接近 90% 比例
+
+![image](./pic/4_en.png "s") 
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图表八
+
+&emsp;&emsp;由此可以看出在非 vscode 和 eclipse 上编译问题占据了接近 80% 比例
+
+&emsp;&emsp;从上面的图表可以看出，外国客户显然更习惯直接用非 IDE 方式去搭建平台，并且在这上产生了大量的问题，与中国客户习惯相反
+
+# 三、建议
+&emsp;&emsp;进行统计以后，又对该类中文问题的回复率进行了大概的观察。
+
 ![image](./pic/5.png "s") 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图1
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图1
 
 &emsp;&emsp;标记为红色的，则意味着没有回复或者没有解决。6 个月内，共计 21 个关于环境搭建问题，其中未解决的有 18 个，未解决率高达 85.7%
+
 &emsp;&emsp;可以看出几乎没有人去解决环境搭建问题。一部分是因为人员比较繁忙没有时间回复，另一方面也由于环境搭建问题本身的复杂度非常高，引起的问题多种多样无法一概而论，必须具体问题具体分析。
+
 &emsp;&emsp;综合上述各类问题，目前可以提出的建议有：
 
 1. 分配人员处理问题
@@ -69,9 +122,14 @@
         - 与其他 SDK 的环境的关系，比如 MDF、ADF、BOX 等。
         一般会给客户发几张图片参考，如下：
 ![image](./pic/6.png "s") 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图2
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图2
+
 ![image](./pic/7.png "s") 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图3
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图3
+
 ![image](./pic/8.png "s") 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图4
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;图4
 
