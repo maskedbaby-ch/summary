@@ -1,6 +1,6 @@
-#SMP
+# SMP
 
-##SMP 三个阶段
+## SMP 三个阶段
 
 ![image](./pair.png)
 
@@ -27,7 +27,7 @@ IRK：ble 设备地址有两类，public address 和 random address，public add
 
 CSRK：数据签名是另一个能够帮助增加安全级别的BLE功能。在没有使用加密时，BLE可以使用连接签名解析密钥（CSRK，Connection Signature Resolving Key）对数据进行认证。签名是由签名算法和计数器产生的。计数器随各数据PDU递增，以避免任何重放攻击。注意，数据签名并非用来防护被动窃听，而是为接收设备验证数据源的真实性。
 
-#完整过程
+# 完整过程
 
 ![image](./complete.png)
 
